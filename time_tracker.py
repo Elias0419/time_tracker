@@ -434,8 +434,8 @@ class FuzzyCompletingLineEdit(QLineEdit):
                 0 if prefix else 1,
                 subpos if subpos >= 0 else 9999,
                 subseq_gap if subseq_gap is not None else 9999,
-                length,
                 rec,
+                length,
             )
             scored.append((key, name))
         scored.sort(key=lambda t: t[0])
